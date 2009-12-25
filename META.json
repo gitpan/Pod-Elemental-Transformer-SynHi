@@ -1,0 +1,21 @@
+{
+   "resources" : {
+      "repository" : "http://github.com/rjbs/pod-elemental-transformer-synhi"
+   },
+   "meta-spec" : {
+      "version" : 1.4,
+      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
+   },
+   "generated_by" : "Dist::Zilla version 1.093400",
+   "version" : "0.093580",
+   "name" : "Pod-Elemental-Transformer-SynHi",
+   "author" : [
+      "Ricardo SIGNES <rjbs@cpan.org>"
+   ],
+   "license" : "perl",
+   "requires" : {
+      "Pod::Elemental" : "0"
+   },
+   "abstract" : "a role for transforming code into syntax highlighted HTML regions"
+}
+
