@@ -10,5 +10,4 @@ lib/Pod/Elemental/Transformer/Codebox.pm
 lib/Pod/Elemental/Transformer/SynHi.pm
 lib/Pod/Elemental/Transformer/SynMux.pm
 t/00-compile.t
-t/release-pod-coverage.t
 t/release-pod-syntax.t

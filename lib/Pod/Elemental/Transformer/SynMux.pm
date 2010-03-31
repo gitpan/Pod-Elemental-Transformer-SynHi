@@ -1,6 +1,6 @@
 use v5.10.0;
 package Pod::Elemental::Transformer::SynMux;
-our $VERSION = '0.100250';
+$Pod::Elemental::Transformer::SynMux::VERSION = '0.100890';
 use Moose;
 with 'Pod::Elemental::Transformer::SynHi';
 # ABSTRACT: apply multiple SynHi transformers to one document in one pass
@@ -43,6 +43,7 @@ sub transform_node {
         my $new = $xform->build_html_para(@$arg);
 
         $node->children->[ $i ] = $new;
+        last XFORM;
       }
     }
   }
@@ -120,7 +121,7 @@ Pod::Elemental::Transformer::SynMux - apply multiple SynHi transformers to one d
 
 =head1 VERSION
 
-version 0.100250
+version 0.100890
 
 =head1 SYNOPSIS
 

@@ -1,6 +1,6 @@
 use v5.10.0;
 package Pod::Elemental::Transformer::SynHi;
-our $VERSION = '0.100250';
+$Pod::Elemental::Transformer::SynHi::VERSION = '0.100890';
 use Moose::Role;
 with 'Pod::Elemental::Transformer';
 # ABSTRACT: a role for transforming code into syntax highlighted HTML regions
@@ -150,7 +150,7 @@ Pod::Elemental::Transformer::SynHi - a role for transforming code into syntax hi
 
 =head1 VERSION
 
-version 0.100250
+version 0.100890
 
 =head1 OVERVIEW
 

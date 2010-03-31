@@ -1,6 +1,6 @@
 use v5.10.0;
 package Pod::Elemental::Transformer::Codebox;
-our $VERSION = '0.100250';
+$Pod::Elemental::Transformer::Codebox::VERSION = '0.100890';
 use Moose;
 with 'Pod::Elemental::Transformer::SynHi';
 # ABSTRACT: convert "=begin code" regions to SynHi boxes with no colorization
@@ -13,7 +13,7 @@ has '+format_name' => (default => 'code');
 sub build_html {
   my ($self, $str, $param) = @_;
 
-  return $self->standard_code_block( HTML::Entities::encode_entities($str));
+  return HTML::Entities::encode_entities($str);
 }
 
 1;
@@ -27,7 +27,7 @@ Pod::Elemental::Transformer::Codebox - convert "=begin code" regions to SynHi bo
 
 =head1 VERSION
 
-version 0.100250
+version 0.100890
 
 =head1 DESCRIPTION
 
