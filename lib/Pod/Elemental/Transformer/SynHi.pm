@@ -1,6 +1,8 @@
 use v5.10.0;
 package Pod::Elemental::Transformer::SynHi;
-$Pod::Elemental::Transformer::SynHi::VERSION = '0.100890';
+{
+  $Pod::Elemental::Transformer::SynHi::VERSION = '0.100891';
+}
 use Moose::Role;
 with 'Pod::Elemental::Transformer';
 # ABSTRACT: a role for transforming code into syntax highlighted HTML regions
@@ -142,6 +144,7 @@ sub transform_node {
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -150,7 +153,7 @@ Pod::Elemental::Transformer::SynHi - a role for transforming code into syntax hi
 
 =head1 VERSION
 
-version 0.100890
+version 0.100891
 
 =head1 OVERVIEW
 
@@ -284,14 +287,13 @@ L<Pod::Elemental::Transformer::SynMux>
 
 =head1 AUTHOR
 
-  Ricardo SIGNES <rjbs@cpan.org>
+Ricardo SIGNES <rjbs@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Ricardo SIGNES.
+This software is copyright (c) 2013 by Ricardo SIGNES.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

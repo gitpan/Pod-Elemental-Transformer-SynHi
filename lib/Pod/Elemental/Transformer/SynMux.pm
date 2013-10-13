@@ -1,6 +1,8 @@
 use v5.10.0;
 package Pod::Elemental::Transformer::SynMux;
-$Pod::Elemental::Transformer::SynMux::VERSION = '0.100890';
+{
+  $Pod::Elemental::Transformer::SynMux::VERSION = '0.100891';
+}
 use Moose;
 with 'Pod::Elemental::Transformer::SynHi';
 # ABSTRACT: apply multiple SynHi transformers to one document in one pass
@@ -113,6 +115,7 @@ sub BUILD {
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -121,7 +124,7 @@ Pod::Elemental::Transformer::SynMux - apply multiple SynHi transformers to one d
 
 =head1 VERSION
 
-version 0.100890
+version 0.100891
 
 =head1 SYNOPSIS
 
@@ -169,14 +172,13 @@ L<Pod::Elemental::Transformer::SynHi>
 
 =head1 AUTHOR
 
-  Ricardo SIGNES <rjbs@cpan.org>
+Ricardo SIGNES <rjbs@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Ricardo SIGNES.
+This software is copyright (c) 2013 by Ricardo SIGNES.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
